@@ -46,6 +46,17 @@ This project implements a deep learning model based on the ResNet-18 architectur
 - Label assignment is based on filename containing 'crack' (case-sensitive)
 - The number of epochs and batch size can be adjusted based on your dataset size and computational resources
 
+## Implementation Details
+- The implementation uses PyTorch's DataLoader for efficient batch processing and includes:
+
+- Image normalization using ImageNet mean and std
+
+- Automatic GPU utilization when available
+
+- Simple filename-based labeling system
+
+- ResNet-18 transfer learning with fine-tuning
+
 ## Installation
 ```bash
 pip install torch torchvision pillow numpy
